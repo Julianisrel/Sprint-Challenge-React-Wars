@@ -18,7 +18,11 @@ const Characters = () => {
         if (characters) {
           return characters.map(character => {
             return (
-            
+            <div key={`characters-id-${character.id}`}>
+              <div>{character.name}</div>
+              <div>{character.species}</div>
+            </div>
+            )
           })
         }
 
